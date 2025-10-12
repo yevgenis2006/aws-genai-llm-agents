@@ -16,16 +16,14 @@ Learning Agents: These are the most advanced. They improve continuously, using f
 
 
 #### Key Features
-
-- **Multiple LLM Support**: Amazon Bedrock (Claude, Llama 2), SageMaker, and custom model endpoints
-- **Nexus Gateway Integration**: Connect to Nexus Gateway for additional model access
-- **Comprehensive RAG Implementation**: Connect to various data sources for context-aware responses
-- **Enterprise Security**: Fine-grained access controls, audit logging, and data encryption
-- **Conversation Memory**: Full conversation history with persistent storage
-- **Web UI and API Access**: Modern React interface and API endpoints for integration
-- **Cost Optimization**: Token usage tracking and cost management features
-- **Deployment Flexibility**: Multiple deployment options to fit your needs
-
+```
+✅ Coordinator,processes manage data availability on the cluster.
+✅ Overlord,processes control the assignment of data ingestion workloads.
+✅ Broker,processes handle queries from external clients.
+✅ Router,processes are optional; they route requests to Brokers, Coordinators, and Overlords.
+✅ Historical,processes store queryable data.
+✅ MiddleManager,Processes ingest data.
+```
 
 #### Prerequisites
 The deployment process is fully automated using AWS CDK and SeedFarmer.
@@ -56,11 +54,4 @@ npm run cdk bootstrap aws://{targetAccountId}/{targetRegion}
 npm run cdk deploy
 ```
 
-
-💡 Outputs:
-```
-GenAIChatBotStack.UserInterfaceUserInterfaceDomanNameXXXXXXXX = dxxxxxxxxxxxxx.cloudfront.net
-GenAIChatBotStack.AuthenticationUserPoolLinkXXXXX = https://xxxxx.aws.amazon.com/cognito/v2/idp/user-pools/xxxxx_XXXXX/users?region=xxxxx
-GenAIChatBotStack.ApiKeysSecretNameXXXX = ApiKeysSecretName-xxxxxx
-```
 
