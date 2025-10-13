@@ -1,7 +1,7 @@
 <img width="1100" height="1361" alt="image" src="https://github.com/user-attachments/assets/7b5cb4a1-2944-4789-a7c3-32effebabde1" />
 
 
-### LLM | Types of AI Agents
+### LLM | Types of AI Agents 🧠🧠🧠
 
 Simple Reflex Agents: These follow condition–action rules. For example, if the temperature is high, turn on the fan. No memory, no thinking, just instant reaction. They are fast and simple.
 
