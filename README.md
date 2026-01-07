@@ -43,7 +43,7 @@ The deployment process is fully automated using AWS CDK and SeedFarmer.
 
 🚀 Deployment 
 ```
-git clone https://github.com/crypterio-app/aws-genai-llm-chatbot.git
+git clone https://github.com/example/aws-genai-llm-chatbot.git
 cd aws-genai-llm-chatbot
 npm ci && npm run build
 npm run test && pip install -r pytest_requirements.txt && pytest tests
